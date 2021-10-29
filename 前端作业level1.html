@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .item {
+            border: 1px solid red;
+            width: 150px;
+        }
+.item1 {
+    height: 120px;
+}
+    .item2 {
+        height: 100px;
+    }
+    .item3 {
+        height: 40px;
+    }
+    .item4 {
+        height: 200px;
+    }
+    .box {
+        border: 1px solid black;
+        display: flex;
+        flex-wrap: wrap;
+        justify-items: flex-start;
+        justify-content: space-around;
+        padding: 20px 20px 20px 20px;
+        align-items: center;
+    }
+    #blue {
+        border:1px solid  blue;
+    }
+    @media screen and (max-width: 620px){
+        .item1 {order: 4;}
+        .item2 {order: 2}
+        .item4 {order: 1;}
+        .item3 {order: 3;}
+    }
+    </style>
+</head>
+<body>
+    <div class="box">
+<div class="item item1">1</div>
+<div class="item item2">2</div>
+<div class="item3 item">3</div>
+<div class="item4 item" id="blue">4</div>
+    </div>
+</body>
+</html>
